@@ -1,0 +1,117 @@
+﻿
+    header{
+        text-align:center;
+        background:-webkit-linear-gradient(#FFFFFF 98%, #000000);
+    }
+
+    .head{
+        text-decoration:underline overline;
+    }
+
+    #name{
+      text-decoration:underline
+    }
+    .title_img_right{
+        float:right;
+        opacity:1;
+    }
+
+    .title_img_left{
+        float:left;
+        opacity:1;
+    }
+
+    .body_img_right{
+        float:right;
+        margin-left:20px;
+        -webkit-border-radius:10px;
+        border-radius:10px;
+        box-shadow: 5px 2px 4px #DDDDDD;
+        border:1px solid black;
+    }
+
+    .body_img_left{
+        float:left;
+        margin-right:20px;
+        -webkit-border-radius:10px;
+        border-radius:10px;
+        box-shadow: 5px 2px 4px #DDDDDD;
+        border:1px solid black;
+    }
+
+
+/*    p.head{
+   position: fixed;
+   top: 30px;
+   right: 5px;
+   color: red;
+}*/
+
+    h1 {
+        font-size:250%;
+        font-variant:small-caps;
+        text-align:center;
+        text-shadow: 5px 2px 4px #DDDDDD;
+        text-transform:capitalize;
+    }
+
+    h2 {
+        font-variant:small-caps;
+        text-shadow: 5px 2px 4px #DDDDDD
+    }
+
+    #Welcome {
+        width:100%;
+    }
+
+    #Welcome .first strong {
+        color:red;
+    }
+
+    body {
+        font-family: Tahoma;
+    }
+
+    ul {
+        font-style:italic;
+        list-style-type:circle;
+    }
+
+    form {
+        vertical-align:top;
+        display:table-cell;
+    }
+
+    a:hover{
+        /*font-size:110%;*/
+        text-shadow: 5px 2px 4px #DDDDDD;
+        /*color:white;*/
+        /*background: black;
+        transition: width 3s;
+        -webkit-transition: background-color 2s ease-in;
+        background-color: black;
+        height:100px;
+    width:0px;
+    animation-name: colorchange;
+    animation-duration: 5s;
+    -webkit-animation-name: colorchange;
+    -webkit-animation-duration: 5s ease;*/
+    }
+
+
+@keyframes colorchange {
+    0% {background-color: white; }
+    100% {background-color: black; }
+}
+
+/*@-webkit-keyframes colorchange {
+    from {width:0px; }
+    to {width:200px; }
+    0% {background-color: white; }
+    100% {background-color: black; }
+}*/
+
+    nav{
+        text-align:center;
+        perspective:100px;
+    }
