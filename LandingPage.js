@@ -1,4 +1,4 @@
-
+]
 var elem = document.getElementById("name");
 /*function alertAge(age, thresh) {
     var isAdult = (age < thresh) ? "too young": "old enough";
