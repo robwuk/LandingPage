@@ -1,24 +1,47 @@
-]
-var elem = document.getElementById("name");
-/*function alertAge(age, thresh) {
-    var isAdult = (age < thresh) ? "too young": "old enough";
->>>>>>> 6c60562f8dc700969c5fcd8b3acda67ad1fb402c
-*/
-function person(name, age, color) {
-  this.name = name;
-//  this.age = age;
-//  this.favColor = color;
-//  this.year  = bornYear;
+var navigation =[["HOME", "HOME", "nav1"],
+                ["Biography", "ABOUT", "nav1"],
+                ["Personal Projects", "PERSONAL", "nav1"],
+                ["freeCodeCamp Responsive Web Desgn", "FCCRWD", "nav1"],
+                ["freeCodeCamp Front End Libraries", "FCCFEL", "nav1"],
+                ["Certificates", "CERTS", "nav1"]];
+
+var personalNav =[["Monkton Park Church", "MPC", "https://robwuk.github.io/MPC_Boot/", "MPC_Old_Photo", ["JavaScript", "HTML", "Bootstrap", "CSS"], "Development website for Monkton Park Methodist Church", "nav2"],
+                  ["Sandbox", "SANDBOX", "https://robwuk.github.io/MPC_Boot/", "WIP", ["JavaScript", "HTML", "Bootstrap", "CSS"], "Development website I use for trying new techniques", "nav2"]];
+
+
+function nav1OnClick(caller) {
+  switch (caller) {
+    case "PERSONAL":
+      createNav2(personalNav);
+      break;
+  };
 }
 
-//function bornYear() {
-//  return 2018 - this.age;
-//}
+function createNav2(navArray) {
+  var navDiv = document.getElementById("subnav");
 
-function printDetail() {
-  elem.innerHTML = /*"Name: " +*/ p1.name // + "\nAge: " + p1.age + " (" + p1.year() + ")\nFavourite Colour: " + p1.favColor;
+  for (i=0; i<navArray.length;i++) {
+    var node = document.createElement("span");
+    console.log(navArray[i][0]);
+    node.innerHTML = navArray[i][0];
+    node.id = navArray[i][1];
+    node.className = navArray[i][6];
+    navDiv.appendChild(node);
+  }
 }
 
-var p1 = new person(prompt("Please Enter Your Name: "), 46, "Blue");
+function createPage(){
+  var navDiv = document.getElementById("navigation");
 
-printDetail();
+  for (i=0; i<navigation.length;i++) {
+    var node = document.createElement("span");
+    console.log(navigation[i][0]);
+    node.innerHTML = navigation[i][0];
+    node.id = navigation[i][1];
+    node.className = navigation[i][2];
+    navDiv.appendChild(node);
+  }
+  createNav2(personalNav);
+}
+
+window.onload = createPage();

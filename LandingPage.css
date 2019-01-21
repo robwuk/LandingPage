@@ -3,7 +3,47 @@
 @font-face {
   font-family: 'Montserrat', sans-serif;
   }
-﻿
+
+#navbar {
+  position:fixed;
+  top: 0;
+  width:100vw;
+  left:0;
+}
+
+#navigation {
+  height: 4vh;
+  line-height: 4vh;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+#subnav{
+  height: 3vh;
+  line-height: 3vh;
+  background-color: #555555;
+  color: #DDDDDD;
+  font-size: 80%;
+}
+
+.nav1, .nav2{
+  padding-left: 3vw;
+}
+
+#mainarea{
+  padding-top: 14vh;
+}
+
+.social_url{
+    filter:grayscale(80%);
+    padding-left: 0.2vw;
+}
+
+.social_url:hover{
+  filter:grayscale(0%)
+}
+
+
     header{
         text-align:center;
         background:-webkit-linear-gradient(#FFFFFF 98%, #000000);
@@ -12,7 +52,7 @@
     #quote{
           font-size:80%;
           font-style:italic;
-          color:white;
+          color:#555555;
           text-align:center;
           }
 
@@ -21,7 +61,7 @@
         background-color:rgba(00,0,0,0.9);
         margin:2.5%;
         width:95%;
-        color:white;
+        color:black;
     }
 
     #flowgrid{
@@ -63,16 +103,9 @@
       }
 
     .body_img_url:hover{
-      filter:grayscale(0%)
+      filter:grayscale(0%);
     }
 
-    .social_url{
-        filter:grayscale(80%)
-    }
-
-    .social_url:hover{
-      filter:grayscale(0%)
-    }
 
     .body_img_left{
         float:left;
@@ -82,14 +115,6 @@
         box-shadow:  0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
         border:1px solid black;
     }
-
-
-/*    p.head{
-   position: fixed;
-   top: 30px;
-   right: 5px;
-   color: red;
-}*/
 
     h1 {
         font-size:250%;
@@ -118,8 +143,8 @@
         //font-family:tahoma;
         //background-color: rgb(255,255,255,1);
         //background:-webkit-linear-gradient(#FFFFFF, #000000);
-        background-image:url("back_ground.jpg");
-        background-size:cover;
+        //background-image:url("back_ground.jpg");
+        //background-size:cover;
     }
 
     ul {
@@ -186,15 +211,34 @@
     color:white;
 }
 
-.footer{
-          border:2px solid yellow;
-      background-color:rgba(00,0,00,0.5);
-      margin:2.5%;
-      width:95%;
-      font-size:80%;
-      font-style:italic;
-      color:white;
+#footer{
+  position:fixed;
+  bottom:0;
+  width: 100vw;
+  color: white;
+  background-color: black;
+  left:0;
+  height: 5vh;
+  line-height: 3vh;
+  display:flex;
 }
+
+#footertext {
+  font-size: 70%;
+  width: 80vw;
+  text-align: left;
+  float:left;
+  padding-left: 1vw;
+}
+
+#socialmedia {
+  padding-right: 2vw;
+  line-height: 7vh;
+  width: 20vw;
+  text-align: right;
+  float:right;
+}
+
 
 .fullCard{
   border-radius:15px;
