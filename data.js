@@ -54,8 +54,9 @@ var quotes = [
 ]
 
 var techIcons = [
-                  ["fab fa-html5", "HTML5"],
-                  ["fab fa-css3-alt", "CSS3"],
-                  ["fab fa-js-square", "Javascript"],
-                  ["fab fa-angular", "Angular"]
+                  ["fab fa-html5", "HTML5", "high"],
+                  ["fab fa-css3-alt", "CSS3", "high"],
+                  ["fab fa-js-square", "Javascript", "medium"],
+                  ["fab fa-angular", "Angular", "low"],
+                  ["fab fa-github", "GitHub", "low"]
                 ]

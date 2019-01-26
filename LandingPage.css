@@ -84,6 +84,15 @@
   font-size: 300%;
 }
 
+.medium {
+  filter: opacity(50%);
+  -webkit-filter: opacity(50%);
+}
+
+.low {
+  filter: opacity(20%);
+  -webkit-filter: opacity(20%);
+}
 
     #flowgrid{
       display:flex;

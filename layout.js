@@ -30,7 +30,7 @@ function techArea() {
 
   for (let i=0; i<techIcons.length; i++) {
     var tech = document.createElement("i");
-    tech.className = techIcons[i][0] + " icon ";
+    tech.className = techIcons[i][0] + " icon " + techIcons[i][2];
     tech.id = techIcons[i][1];
     node.appendChild(tech);
   }
