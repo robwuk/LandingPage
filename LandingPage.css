@@ -30,6 +30,10 @@
   padding-left: 3vw;
 }
 
+.nav1:hover, .nav2:hover{
+  cursor: pointer;
+}
+
 #mainarea{
   padding-top: 14vh;
 }
