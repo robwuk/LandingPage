@@ -8,6 +8,10 @@ function nav1OnClick(caller) {
       secondNavVisible("hidden");
       homePage();
       break;
+    case "ABOUT":
+      secondNavVisible("hidden");
+      bioPage();
+      break;
     case "PERSONAL":
       createNav2(personalNav);
       break;
@@ -35,6 +39,7 @@ function createNav1() {
     node.id = navigation[i][1];
     node.className = navigation[i][2];
     node.setAttribute("onclick", "nav1OnClick('"+navigation[i][1]+"')");
+  //  node.setAttribute("onmouseover", "nav1OnMouseOver('" + navigation[i][3] + "', '" + navigation[i][1] + "')")
     navDivOne.appendChild(node);
   }
 }

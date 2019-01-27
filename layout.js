@@ -1,5 +1,6 @@
 function homePage() {
     var node = document.createElement("header");
+    clearMain();
     node.innerHTML = author;
     node.id = "author";
     node.className = "header";
@@ -16,10 +17,8 @@ function homePage() {
 function newQuote(){
   var node = document.createElement("section");
   var i = Math.floor(Math.random() * quotes.length + 1);
-  var quoteText = quotes[(i-1)][0];
-  var authorName = quotes[(i-1)][1];
 
-  node.innerHTML = '"' + quoteText + '" - ' + authorName;
+  node.innerHTML = '"' + quotes[(i-1)][0] + '" - ' + quotes[(i-1)][1];
   node.id = "quote";
   mainArea.appendChild(node);
 }
@@ -38,11 +37,32 @@ function techArea() {
   mainArea.append(node);
 }
 
+function bioPage() {
+    var node = document.createElement("object");
+    clearMain();
+
+    //for (i=0; i<about.length; i++) {
+   	//	node.innerHTML += about[i];
+   	//};
+    node.className = "about";
+    node.data = 'about.html';
+
+    //"<script src='about.js'></script>";
+    mainArea.appendChild(node);
+}
+
+function clearMain() {
+  mainArea.innerHTML="";
+}
+
 function createPage(){
   secondNavVisible("hidden");
   createNav1();
 }
 
+function nav1OnMouseOver(colour, dom) {
+  document.getElementById(dom).style.backgroundColor=colour;
+}
 
 window.onload = createPage();
 window.onload = homePage();

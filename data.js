@@ -2,13 +2,13 @@ const author = "Robert Worth";
 const intro = " ~ Personal Profile ~";
 
 var navigation = [
-                  ["HOME", "HOME", "nav1"],
-                  ["Biography", "ABOUT", "nav1"],
-                  ["Personal Projects", "PERSONAL", "nav1"],
+                  ["<i class='fas fa-home'></i> HOME", "HOME", "nav1", "#000000"],
+                  ["Biography", "ABOUT", "nav1", "#DDAA66"],
+                  ["Personal Projects", "PERSONAL", "nav1", "#DDAA66"],
                   //["freeCodeCamp Responsive Web Desgn", "FCCRWD", "nav1"],
                   //["freeCodeCamp Front End Libraries", "FCCFEL", "nav1"],
-                  ["Online Coursework","COURSES", "nav1"],
-                  ["Certificates", "CERTS", "nav1"]
+                  ["Online Coursework","COURSES", "nav1", "#DDAA66"],
+                  ["Certificates", "CERTS", "nav1", "#DDAA66"]
                 ];
 
 var courseNav = [
@@ -60,3 +60,8 @@ var techIcons = [
                   ["fab fa-angular", "Angular", "low"],
                   ["fab fa-github", "GitHub", "low"]
                 ]
+
+var about = ["<h2>About Me</h2>",
+"<p>I have been an IT Project Manager for over 15 years but was originally a developer (mid->late '90s). As part of my personal development, I am revisiting coding using HTML, CSS and JavaScript as", 'languages and <a href="https://github.com/" target="_blank">GitHub</a> as my version management tool. My long term goal is to move back in to  front-end development.</br></br>/n',
+'The below pages are the projects I am currently working on, one being  development site for the church I attend (and whose website I maintain) and the second being the area I try new skills/techniques in.</br></br>',
+'Feel free to have a look at my work, I can be contacted on any of the usual Social Media platforms or vial email.']

@@ -27,11 +27,21 @@
 }
 
 .nav1, .nav2{
-  padding-left: 3vw;
+  margin-left: 3vw;
+  text-align: center;
+}
+
+.nav1 {
+  height: 100%;
 }
 
 .nav1:hover, .nav2:hover{
   cursor: pointer;
+}
+
+.about{
+  font-family: "Montserat";
+  color: red;
 }
 
 #mainarea{
@@ -146,45 +156,16 @@
         border:1px solid black;
     }
 
-    h1 {
-        font-size:250%;
-        font-variant:small-caps;
-        text-align:center;
-        text-shadow:  0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
-        text-decoration:underline overline;
-        text-transform:capitalize;
-    }
 
-    h2 {
-        font-variant:small-caps;
-        text-shadow:  0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
-    }
 
-    #Welcome {
-        width:100%;
-    }
-
-    #Welcome .first strong {
-        color:red;
-    }
 
     body {
         font-family: "Montserrat";
-        //font-family:tahoma;
-        //background-color: rgb(255,255,255,1);
-        //background:-webkit-linear-gradient(#FFFFFF, #000000);
-        //background-image:url("back_ground.jpg");
-        //background-size:cover;
     }
 
     ul {
         font-style:italic;
         list-style-type:circle;
-    }
-
-    form {
-        vertical-align:top;
-        display:table-cell;
     }
 
     a{
@@ -194,22 +175,44 @@
         text-shadow: 5px 2px 4px rgba(0,0,0,.1);
     }
 
-    nav{
-        text-align:center;
-        perspective:100px;
-    }
-
-    #thumbnail{
-
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+.about{
+  height:80vh;
+  margin-left: 25vw;
+  margin-top: 10vh;
+  width:50vw;
+  color:black;
 }
 
-.about{
-    border:2px solid rgba(0,255,0,1);
-    background-color:rgba(00,0,0,0.8);
-    margin:2.5%;
-    width:95%;
-    color:white;
+.columns::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.about h2{
+  font-family: "Montserat";
+}
+
+.about__left{
+  top: 0;
+  width: 45vw;
+  float:left;
+  text-align: justify;
+}
+
+.about__right{
+  width:45vw;
+  float:right;
+  text-align: justify;
+}
+
+#contact {
+  text-align: center;
+  font-size: 150%;
+}
+.social_bw{
+  filter: invert(100%);
+  padding: 1vw;
 }
 
 .links{
