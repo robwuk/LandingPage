@@ -43,9 +43,10 @@ function bioPage() {
     var node = document.createElement("object");
     clearMain();
 
-    node.className = "about";
-    node.data = 'about.html';
-
+    var source = document.getElementById("internalabout");
+    node.id = "aboutme";
+    node.innerHTML = source.innerHTML;
+//    node.data = 'about.html';
     mainArea.appendChild(node);
 }
 

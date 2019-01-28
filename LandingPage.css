@@ -46,6 +46,7 @@
 
 #mainarea{
   height: 84vh;
+  margin-top: 8vh;
 }
 
 #author{
@@ -54,22 +55,13 @@
   font-weight: 400;
   font-size: 400%;
   color:black;
-  padding-top: 25vh;
+  padding-top: 15vh;
 }
 
 #intro {
   text-align: center;
   font-family: ="Montserrat";
   font-size: 200%;
-}
-
-.social_url{
-  filter:grayscale(80%);
-  padding-left: 0.2vw;
-}
-
-.social_url:hover{
-  filter:grayscale(0%)
 }
 
 #quote {
@@ -104,96 +96,96 @@
   -webkit-filter: opacity(20%);
 }
 
-    #flowgrid{
-      display:flex;
-      flex-wrap: nowrap;
-    }
+body {
+    font-family: "Montserrat";
+}
 
-    #name{
-      text-decoration:underline
-    }
-    .title_img_right{
-        float:right;
-        opacity:1;
-    }
+ul {
+    font-style:italic;
+    list-style-type:circle;
+}
 
-    .title_img_left{
-        float:left;
-        opacity:1;
-    }
+a{
+  color:orange;
+}
+a:hover{
+    text-shadow: 5px 2px 4px rgba(0,0,0,.1);
+}
 
-    .body_img_right{
-        float:right;
-        margin-left:20px;
-        -webkit-border-radius:10px;
-        border-radius:10px;
-        box-shadow:  0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
-        border:1px solid black;
-    }
+#internalabout{
+  display:none;
+}
 
-    .body_img_url{
-        -webkit-border-radius:10px;
-        border-radius:10px;
-        box-shadow:  0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
-        border:1px solid black;
-        filter:grayscale(80%);
-        max-width: 100%;
-        display: block;
-        height: auto;
-      }
+@media only screen and (max-width: 1000px) {
+  .aboutme, .columns, #contact{
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 10vh;
+    width:90vw;
+    color:black;
+  }
 
-    .body_img_url:hover{
-      filter:grayscale(0%);
-    }
+  .about__left{
+    top: 0;
+    width: 90vw;
+    text-align: justify;
+  }
 
+  .about__right{
+    width:90vw;
+    text-align: justify;
+  }
+}
 
-    .body_img_left{
-        float:left;
-        margin-right:20px;
-        -webkit-border-radius:10px;
-        border-radius:10px;
-        box-shadow:  0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
-        border:1px solid black;
-    }
+@media only screen and (min-width: 1001px) {
+  .about__left{
+    top: 0;
+    width: 47vw;
+    margin-right:3vw;
+    float:left;
+    text-align: justify;
+  }
 
+  .about__left h2{
+    text-align: right;
+  }
 
+  .about__right{
+    width:48vw;
+    float:right;
+    text-align: justify;
+  }
 
+  .columns{
+    display:flex;
+  }
 
-    body {
-        font-family: "Montserrat";
-    }
-
-    ul {
-        font-style:italic;
-        list-style-type:circle;
-    }
-
-    a{
-      color:orange;
-    }
-    a:hover{
-        text-shadow: 5px 2px 4px rgba(0,0,0,.1);
-    }
+}
 
 @media only screen and (min-width: 1500px) {
-  .about{
-    height:80vh;
+  .aboutme, .columns, #contact{
     margin-left: 25vw;
+    margin-right: 25vw;
     margin-top: 10vh;
     width:50vw;
     color:black;
   }
+
 }
 
-@media only screen and (max-width: 1500px) {
-  .about{
-    height:90vh;
-    margin-left: 5vw;
-    margin-top: 5vh;
-    width:90vw;
-    color:black;
+@media only screen and (max-width: 1499px) and (min-width: 1001px) {
+
+  .aboutme, .columns, #contact{
+      margin-left: 4vw;
+      margin-right: 5vw;
+      margin-top: 5vh;
+      width:90vw;
+      color:black;
   }
 }
+
+
+
 
 .columns::after {
   content: "";
@@ -205,59 +197,19 @@
   font-family: "Montserat";
 }
 
-.about__left{
-  top: 0;
-  width: 45vw;
-  float:left;
-  text-align: justify;
-}
-
-.about__left h2{
-  text-align: right;
-}
-
-.about__right{
-  width:45vw;
-  float:right;
-  text-align: justify;
-}
 
 #contact {
   text-align: center;
   font-size: 150%;
 }
 .social_bw{
-  filter: invert(100%);
+  filter: invert(50%);
   padding: 1vw;
+  line-height: 50px;
 }
 
-.links{
-      border:2px solid rgba(0,0,255,1);
-      margin-top:1%;
-      margin-left:2.5%;
-      margin-right:1%;
-      background-color:rgba(00,0,0,0.7);
-      width:95%;
-      color:white;
-      align-self: stretch;
-}
-.certificates{
-      border:2px solid orange;
-      margin-top:1%;
-      background-color:rgba(0,0,00,0.6);
-      margin-right: 2.5%;
-      margin-left:1%;
-      width:95%;
-      color:white;
-      align-self: stretch;
-}
-
-.fccProjects{
-    border:2px solid rgba(0,255,255,1);
-    background-color:rgba(00,0,0,0.8);
-    margin:2.5%;
-    width:95%;
-    color:white;
+.social_bw:hover {
+  filter: invert(100%);
 }
 
 #footer{
@@ -286,18 +238,4 @@
   width: 20vw;
   text-align: right;
   float:right;
-}
-
-
-.fullCard{
-  border-radius:15px;
-  padding:2px;
-}
-
-.cardText{
-  margin-bottom:30px;
-}
-
-.cardContent{
-  padding:8px;
 }
