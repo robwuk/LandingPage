@@ -1,11 +1,6 @@
 function homePage() {
     var node = document.createElement("header");
     clearMain();
-    node.innerHTML = initials;
-    node.id = "initials";
-    node.className = "logo";
-    mainArea.appendChild(node);
-    node = document.createElement("header");
     node.innerHTML = author;
     node.id = "author";
     node.className = "header";
@@ -25,14 +20,13 @@ function newQuote(){
 
   node.innerHTML = '"' + quotes[(i-1)][0] + '" - ' + quotes[(i-1)][1];
   node.id = "quote";
-  node.className = "header";
   mainArea.appendChild(node);
 }
 
 function techArea() {
   var node = document.createElement("section")
   node.id = "techarea";
-  node.className="header";
+
   for (let i=0; i<techIcons.length; i++) {
     var tech = document.createElement("img");
     tech.src = techIcons[i][0];

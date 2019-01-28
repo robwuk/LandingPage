@@ -39,68 +39,45 @@
   cursor: pointer;
 }
 
+.about{
+  font-family: "Montserat";
+  color: red;
+}
+
 #mainarea{
   height: 84vh;
   margin-top: 8vh;
 }
 
-#initials{
-  font-family: ="Montserrat";
-  font-weight: 400;
-  font-size: 2500%;
-  color:white;
-  background-color: RGB(250,250,250);
-  border-radius: 10%;
-  line-height: 80vh;
-  width: 95vw;
-  height:80vh;
-  text-align: left;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-85vh,-40vh);
-  z-index:-1;
-}
-
-.header{
-  width:70vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(10vh,-40vh);
-}
-
 #author{
-  position: relative;
   text-align: center;
   font-family: ="Montserrat";
   font-weight: 400;
   font-size: 400%;
   color:black;
-  padding-top: 10vh;
+  padding-top: 15vh;
 }
 
 #intro {
-  position: relative;
   text-align: center;
   font-family: ="Montserrat";
   font-size: 200%;
 }
 
 #quote {
-  position: relative;
+  margin-left: 25vw;
   font-size:100%;
   font-style:italic;
   color: #AAAAAA;
   text-align: center;
+  width:50vw;
   margin-top: 10vh;
 }
 
 #techarea {
-  position:relative;
-  /*margin-left: 25vw;*/
+  margin-left: 25vw;
   text-align: center;
-  /*width:50vw;*/
+  width:50vw;
   margin-top: 10vh;
 }
 
@@ -158,16 +135,6 @@ a:hover{
     width:90vw;
     text-align: justify;
   }
-
-  .about__left h2{
-    background: linear-gradient(to left, white, black);
-    color:white;
-  }
-
-  .about__right h2{
-    background: linear-gradient(to left, white, black);
-    color:white;
-  }
 }
 
 @media only screen and (min-width: 1001px) {
@@ -181,14 +148,6 @@ a:hover{
 
   .about__left h2{
     text-align: right;
-    background: linear-gradient(to right, white, black);
-    color:white;
-    padding-right: 2px;
-  }
-
-  .about__right h2{
-    background: linear-gradient(to left, white, black);
-    color:white;
   }
 
   .about__right{
@@ -225,6 +184,9 @@ a:hover{
   }
 }
 
+
+
+
 .columns::after {
   content: "";
   clear: both;
@@ -240,7 +202,6 @@ a:hover{
   text-align: center;
   font-size: 150%;
 }
-
 .social_bw{
   filter: invert(50%);
   padding: 1vw;

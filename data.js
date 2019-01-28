@@ -1,6 +1,5 @@
 const author = "Robert Worth";
 const intro = " ~ Personal Profile ~";
-const initials = "RW";
 
 var navigation = [
                   ["<i class='fas fa-home'></i> HOME", "HOME", "nav1", "#000000"],
@@ -50,7 +49,7 @@ var quotes = [
               ["Between stimulus and response there is a space. In that space is our power to choose our response. In our response lies our growth and our freedom.", "Vikto Frankl"],
               ["We must become the change we want to see.", "Mahatma Ghandi"],
               ["Investing in yourself is the best investment you will ever make. It will not only improve your life, it will improve the lives of all those around you.", "Robin Sharma"],
-              ["Look in the mirror that's your competition.", "Anon."],
+              ["Look in the mirror that’s your competition.", "Anon."],
               ["The only person you are destined to become is the person you decide to be.", "Ralph Waldo Emerson"]
 ]
 
