@@ -28,8 +28,10 @@ function techArea() {
   node.id = "techarea";
 
   for (let i=0; i<techIcons.length; i++) {
-    var tech = document.createElement("i");
-    tech.className = techIcons[i][0] + " icon " + techIcons[i][2];
+    var tech = document.createElement("img");
+    tech.src = techIcons[i][0];
+    tech.title = techIcons[i][1] + " : " + techIcons[i][2];
+    tech.className = "icon " + techIcons[i][2];
     tech.id = techIcons[i][1];
     node.appendChild(tech);
   }
@@ -41,13 +43,9 @@ function bioPage() {
     var node = document.createElement("object");
     clearMain();
 
-    //for (i=0; i<about.length; i++) {
-   	//	node.innerHTML += about[i];
-   	//};
     node.className = "about";
     node.data = 'about.html';
 
-    //"<script src='about.js'></script>";
     mainArea.appendChild(node);
 }
 

@@ -91,7 +91,7 @@
 
 .icon {
   padding: 1vw;
-  font-size: 300%;
+  height: 50px;
 }
 
 .medium {
@@ -175,12 +175,24 @@
         text-shadow: 5px 2px 4px rgba(0,0,0,.1);
     }
 
-.about{
-  height:80vh;
-  margin-left: 25vw;
-  margin-top: 10vh;
-  width:50vw;
-  color:black;
+@media only screen and (max-width: 1000px) {
+  .about{
+    height:80vh;
+    margin-left: 25vw;
+    margin-top: 10vh;
+    width:50vw;
+    color:black;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .about{
+    height:80vh;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    width:80vw;
+    color:black;
+  }
 }
 
 .columns::after {
@@ -198,6 +210,10 @@
   width: 45vw;
   float:left;
   text-align: justify;
+}
+
+.about__left h2{
+  text-align: right;
 }
 
 .about__right{

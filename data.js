@@ -54,14 +54,10 @@ var quotes = [
 ]
 
 var techIcons = [
-                  ["fab fa-html5", "HTML5", "high"],
-                  ["fab fa-css3-alt", "CSS3", "high"],
-                  ["fab fa-js-square", "Javascript", "medium"],
-                  ["fab fa-angular", "Angular", "low"],
-                  ["fab fa-github", "GitHub", "low"]
+                  ["html5.svg", "HTML5", "high"],
+                  ["css3_full.svg", "CSS3", "high"],
+                  ["js_badge.svg", "Javascript", "medium"],
+                  ["bootstrap.svg", "Bootstrap", "medium"],
+                  ["angular_simple.svg", "Angular", "low"],
+                  ["github_badge.svg", "GitHub", "low"]
                 ]
-
-var about = ["<h2>About Me</h2>",
-"<p>I have been an IT Project Manager for over 15 years but was originally a developer (mid->late '90s). As part of my personal development, I am revisiting coding using HTML, CSS and JavaScript as", 'languages and <a href="https://github.com/" target="_blank">GitHub</a> as my version management tool. My long term goal is to move back in to  front-end development.</br></br>/n',
-'The below pages are the projects I am currently working on, one being  development site for the church I attend (and whose website I maintain) and the second being the area I try new skills/techniques in.</br></br>',
-'Feel free to have a look at my work, I can be contacted on any of the usual Social Media platforms or vial email.']
