@@ -1,5 +1,5 @@
 const author = "Robert Worth";
-const intro = " ~ Personal Profile ~";
+const intro = "Frontend Developer / Project Manager / Music Lover";
 
 var navigation = [
                   ["<i class='fas fa-home'></i> HOME", "HOME", "nav1", "#000000"],
@@ -61,3 +61,37 @@ var techIcons = [
                   ["angular_simple.svg", "Angular", "low"],
                   ["github_badge.svg", "GitHub", "low"]
                 ]
+
+
+var FCCRWD = [['<courseTitle>freeCodeCamp Responsive Web Design Projects</courseTitle><br /><br />',
+              'As part of the <a href="https://learn.freecodecamp.org" target="_blank">freeCodeCamp</a>',
+              ' <i>Responsive Web Design</i> certificate there are 5 projects that need to be completed, ',
+              'tested and submitted, These projects cover all of the elements the course goes over and are ',
+              'used to confirm learning. Click the corresponding link to see the finished project'].join(""),
+              "test"]
+
+var FCCFEL = [['<courseTitle>freeCodeCamp Front End Library Projects</courseTitle><br /><br />',
+              'As part of the <a href="https://learn.freecodecamp.org" target="_blank">freeCodeCamp</a>',
+              ' <i>Responsive Web Design</i> certificate there are 5 projects that need to be completed, ',
+              'tested and submitted, These projects cover all of the elements the course goes over and are ',
+              'used to confirm learning. Click the corresponding link to see the finished project'].join(""),
+              "test"]
+
+var FEM = [['<courseTitle>Front End Mentor Projects</courseTitle><br /><br />',
+              'As part of the <a href="https://learn.freecodecamp.org" target="_blank">freeCodeCamp</a>',
+              ' <i>Responsive Web Design</i> certificate there are 5 projects that need to be completed, ',
+              'tested and submitted, These projects cover all of the elements the course goes over and are ',
+              'used to confirm learning. Click the corresponding link to see the finished project'].join(""),
+              "test"]
+
+var MPC = [['<courseTitle>Monkton Park Church</courseTitle><br /><br />',
+              'Development website for Monkton Park Methodist Chruch. Built using HTML5, CSS3 and ',
+              'Javascript it gives people an insight to the church, regular events and any special ',
+              'occassions in the newa future.'].join(""),
+              "test"]
+
+var SANDBOX = [['<courseTitle>Sandbox</courseTitle><br /><br />',
+              'Test bed site in which I will look to use different techniques as/when I come across them. ',
+              'The contents may vary and look a bit disjointed and have errors but that is all part of ',
+              'my style of learning.'].join(""),
+              "test"]

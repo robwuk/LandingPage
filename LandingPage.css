@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
 
 @font-face {
   font-family: 'Montserrat', sans-serif;
+  font-family: 'Bad Script', cursive;
   }
 
 #navbar {
@@ -39,46 +41,53 @@
   cursor: pointer;
 }
 
-.about{
-  font-family: "Montserat";
-  color: red;
-}
-
 #mainarea{
   height: 84vh;
   margin-top: 8vh;
 }
 
+.header{
+  margin-left: 15vw;
+  width:70vw;
+}
+
 #author{
   text-align: center;
-  font-family: ="Montserrat";
+  font-family: "Bad Script";
   font-weight: 400;
-  font-size: 400%;
+  font-size: 700%;
   color:black;
-  padding-top: 15vh;
+  padding-top: 10vh;
 }
 
 #intro {
   text-align: center;
   font-family: ="Montserrat";
-  font-size: 200%;
+  font-size: 150%;
 }
 
 #quote {
-  margin-left: 25vw;
   font-size:100%;
   font-style:italic;
   color: #AAAAAA;
-  text-align: center;
-  width:50vw;
-  margin-top: 10vh;
-}
-
-#techarea {
   margin-left: 25vw;
   text-align: center;
   width:50vw;
+  margin-top: 5vh;
+}
+
+#techarea {
+  margin-top:5vh;
+  margin-left: 25vw;
+  text-align: center;
+  width:50vw;*/
   margin-top: 10vh;
+}
+
+.course {
+  text-align: justify;
+  font-size: 90%;
+  position: static;
 }
 
 .icon {
@@ -135,6 +144,16 @@ a:hover{
     width:90vw;
     text-align: justify;
   }
+
+  .about__left h2{
+    background: linear-gradient(to left, white, black);
+    color:white;
+  }
+
+  .about__right h2{
+    background: linear-gradient(to left, white, black);
+    color:white;
+  }
 }
 
 @media only screen and (min-width: 1001px) {
@@ -148,6 +167,14 @@ a:hover{
 
   .about__left h2{
     text-align: right;
+    background: linear-gradient(to right, white, black);
+    color:white;
+    padding-right: 2px;
+  }
+
+  .about__right h2{
+    background: linear-gradient(to left, white, black);
+    color:white;
   }
 
   .about__right{
@@ -184,8 +211,10 @@ a:hover{
   }
 }
 
-
-
+courseTitle{
+  font-size: 150%;
+  font-weight: bold;
+}
 
 .columns::after {
   content: "";
@@ -202,6 +231,7 @@ a:hover{
   text-align: center;
   font-size: 150%;
 }
+
 .social_bw{
   filter: invert(50%);
   padding: 1vw;

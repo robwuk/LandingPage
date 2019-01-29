@@ -14,9 +14,11 @@ function nav1OnClick(caller) {
       break;
     case "PERSONAL":
       createNav2(personalNav);
+      coursePage(personalNav);
       break;
     case "COURSES":
       createNav2(courseNav);
+      coursePage(courseNav);
       break;
   //  case "FCCRWD":
   //    createNav2(fccRWDNav);
