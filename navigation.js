@@ -13,16 +13,13 @@ function nav1OnClick(caller) {
       bioPage();
       break;
     case "PERSONAL":
-      createNav2(personalNav);
+      //createNav2(personalNav);
       coursePage(personalNav);
       break;
     case "COURSES":
-      createNav2(courseNav);
+      //createNav2(courseNav);
       coursePage(courseNav);
       break;
-  //  case "FCCRWD":
-  //    createNav2(fccRWDNav);
-  //    break;
   //  case "FCCFEL":
   //    createNav2(fccFELNav);
   //    break;

@@ -37,7 +37,7 @@
   height: 100%;
 }
 
-.nav1:hover, .nav2:hover{
+.nav1:hover, .nav2:hover, .moreinfo{
   cursor: pointer;
 }
 
@@ -52,12 +52,13 @@
 }
 
 #author{
+  text-shadow: 4px -2px 3px #AAAAAA, 8px -2px 12px #CCCCCC;
   text-align: center;
   font-family: "Bad Script";
   font-weight: 400;
-  font-size: 700%;
-  color:black;
-  padding-top: 10vh;
+  font-size: 1050%;
+  color:white;
+  padding-top: 1.5vh;
 }
 
 #intro {
@@ -211,9 +212,18 @@ a:hover{
   }
 }
 
+.moreinfo {
+  color: red;
+}
+
+.projectImage{
+  border-radius: 20% 0% 50% 0%;
+}
+
 courseTitle{
   font-size: 150%;
   font-weight: bold;
+  text-decoration: underline darkgreen;
 }
 
 .columns::after {

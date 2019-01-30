@@ -26,7 +26,7 @@ var fccRWDNav = [
                   ["Tribute Page", "TRIBUTE", "https://robwuk.github.io/TributePage/", "Tribute.PNG", ["HTML", "CSS"], "freeCodeCamp Tribute Page", "nav2"],
                   ["Technical Documentation", "TECHDOC", "https://robwuk.github.io/TechDoc/", "TechDoc.PNG", ["HTML", "CSS"], "freeCodeCamp Technical Documentation Page", "nav2"],
                   ["Survey Form", "SURVEY", "https://robwuk.github.io/SurveyForm/", "Survey.PNG", ["HTML", "CSS"], "freeCodeCamp Survey Form Page", "nav2"],
-                  ["Personal Profile", "PROFILE", "https://robwuk.github.io/Profile/", "RW_Profile.PNG", ["HTML", "CSS"], "freeCodeCamp Personal Profile Page", "nav2"],
+                  ["Personal Profile", "PROFILE", "https://robwuk.github.io/Profile/", "FCC_Profile_Small.jpg", ["HTML", "CSS"], "freeCodeCamp Personal Profile Page", "nav2"],
                   ["Product Overview", "PRODUCT", "https://robwuk.github.io/ProductPage/", "Product.PNG", ["HTML", "CSS"], "freeCodeCamp Product Overview Page", "nav2"]
                 ];
 
@@ -38,10 +38,18 @@ var fccFELNav = [
                   ["GitHub Markdown Previewer", "MARKDOWN", "https://robwuk.github.io/Git_Parse/", "Product.PNG", ["HTML", "CSS"], "freeCodeCamp GitHub Markdown Previewer", "nav2"]
                 ];
 
-var home = [
-            ["Robert Worth", "home__name", "author"],
-            ["Welcome to my Project Landing Page", "home__welcome", "welcome"]
-]
+var sandBoxProject = [
+                  ["Sandbox", "SANDBOX", "https://robwuk.github.io/FCC_RQG/", "webdevelopment.jpg", ["HTML", "CSS", "JavaScript"], "Sandbox", "nav2"]
+                ];
+
+
+var FEMNav = [
+                  ["Challenge 1", "FEM1", "https://robwuk.github.io/FCC_RQG/", "WIP.jpg", ["HTML", "CSS", "JavaScript"], "Front End Montor Challenge 1", "nav2"]
+                ];
+
+var MPCProject = [
+                  ["Monkton Park Church", "FEM1", "https://robwuk.github.io/FCC_RQG/", "MPC_Old_Photo.jpg", ["HTML", "CSS", "JavaScript"], "Monkton Park Church", "nav2"]
+                ];
 
 var quotes = [
               ["For the best return on your money, pour your purse into your head.", "Benjamin Franklin"],
@@ -68,30 +76,30 @@ var FCCRWD = [['<courseTitle>freeCodeCamp Responsive Web Design Projects</course
               ' <i>Responsive Web Design</i> certificate there are 5 projects that need to be completed, ',
               'tested and submitted, These projects cover all of the elements the course goes over and are ',
               'used to confirm learning. Click the corresponding link to see the finished project'].join(""),
-              "test"]
+              "fccRWDNav", "courseNav", "FCCRWD"]
 
 var FCCFEL = [['<courseTitle>freeCodeCamp Front End Library Projects</courseTitle><br /><br />',
               'As part of the <a href="https://learn.freecodecamp.org" target="_blank">freeCodeCamp</a>',
               ' <i>Responsive Web Design</i> certificate there are 5 projects that need to be completed, ',
               'tested and submitted, These projects cover all of the elements the course goes over and are ',
               'used to confirm learning. Click the corresponding link to see the finished project'].join(""),
-              "test"]
+              "fccFELNav", "courseNav", "FCCFEL"]
 
 var FEM = [['<courseTitle>Front End Mentor Projects</courseTitle><br /><br />',
               'As part of the <a href="https://learn.freecodecamp.org" target="_blank">freeCodeCamp</a>',
               ' <i>Responsive Web Design</i> certificate there are 5 projects that need to be completed, ',
               'tested and submitted, These projects cover all of the elements the course goes over and are ',
               'used to confirm learning. Click the corresponding link to see the finished project'].join(""),
-              "test"]
+              "FEMNav", "courseNav", "FEM"]
 
 var MPC = [['<courseTitle>Monkton Park Church</courseTitle><br /><br />',
-              'Development website for Monkton Park Methodist Chruch. Built using HTML5, CSS3 and ',
-              'Javascript it gives people an insight to the church, regular events and any special ',
-              'occassions in the newa future.'].join(""),
-              "test"]
+              'Development website for Monkton Park Methodist Church. Built using HTML5, CSS3 and ',
+              'Javascript it gives people an insight in to the church, regular events and any special ',
+              'occassions in the near future.'].join(""),
+              "MPCProject", "personalNav", "MPC"]
 
 var SANDBOX = [['<courseTitle>Sandbox</courseTitle><br /><br />',
               'Test bed site in which I will look to use different techniques as/when I come across them. ',
               'The contents may vary and look a bit disjointed and have errors but that is all part of ',
               'my style of learning.'].join(""),
-              "test"]
+              "sandBoxProject", "personalNav", "SANDBOX"]
