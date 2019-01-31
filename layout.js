@@ -89,10 +89,12 @@ function displayProjects(project, source){
 
   var projectList = window[variable[1]]
 
-  if (projectList.length > 1){
     createContainer('18% 10% 10% 40% 18%');
-    scrollButton(project, source, "next", "fas fa-chevron-circle-right", 5);
-    scrollButton(project, source, "previous", "fas fa-chevron-circle-left", 1);
+
+    if (projectList.length > 1){
+      scrollButton(project, source, "next", "fas fa-chevron-circle-right", 5);
+      scrollButton(project, source, "previous", "fas fa-chevron-circle-left", 1);
+    }
 
     var node = document.createElement("section");
     node.id = projectList[ProjectId][1] + "__text";
@@ -137,9 +139,7 @@ function displayProjects(project, source){
     node.style.gridRow = "2 / span 3";
     node.style.boxShadow = '5px 5px 13px #AAAAAA';
     container.appendChild(node);
-  } else {
-    alert("just 1 - needs coding");
-  };
+
 }
 
 function createContainer(columnDetail){
