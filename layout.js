@@ -52,15 +52,7 @@ function bioPage() {
 
 function coursePage(pageArray) {
   clearMain();
-
-  var node = document.createElement("section");
-  node.id = "container";
-  node.class = "container";
-  node.style.gridTemplateColumns = '"40vw" "20vw" "40vw"';
-  node.style.display = "grid";
-  node.style.gridColumnGap = "1vw";
-  node.style.marginTop = "10vh";
-  mainArea.appendChild(node);
+  createContainer('45% 7% 45%');
 
   var container = document.getElementById("container");
 
@@ -96,41 +88,11 @@ function displayProjects(project, source){
   mainArea.appendChild(node);
 
   var projectList = window[variable[1]]
-  var node = document.createElement("section");
 
   if (projectList.length > 1){
-    node.id = "container";
-    node.class = "container";
-    node.style.gridTemplateColumns = '20% 10% 10% 40% 20%';
-    node.style.display = "grid";
-    node.style.gridColumnGap = "1vw";
-    node.style.marginTop = "10vh";
-    mainArea.appendChild(node);
-
-    var container = document.getElementById("container");
-
-    var node = document.createElement("section");
-    node.id = "previous";
-    node.className = "scroll";
-    node.innerHTML = "<--";
-    node.style.textShadow = '2px 2px 1px #DDDDDD';
-    node.style.textAlign = "right";
-    node.style.gridColumn = "1";
-    node.style.gridRow = "2"
-    node.setAttribute("onclick", "previousProject('" + project + "', '" + source + "')");
-    container.appendChild(node);
-
-    var node = document.createElement("section");
-    node.id = "next";
-    node.className = "scroll";
-    node.innerHTML = "-->";
-    node.style.textShadow = '2px 2px 1px #DDDDDD';
-    node.style.textAlign = "left";
-    node.style.gridColumn = "5";
-    node.style.gridRow = "2"
-    node.className = node.className + " left";
-    node.setAttribute("onclick", "nextProject('" + project + "', '" + source + "')");
-    container.appendChild(node);
+    createContainer('18% 10% 10% 40% 18%');
+    scrollButton(project, source, "next", "fas fa-chevron-circle-right", 5);
+    scrollButton(project, source, "previous", "fas fa-chevron-circle-left", 1);
 
     var node = document.createElement("section");
     node.id = projectList[ProjectId][1] + "__text";
@@ -138,7 +100,8 @@ function displayProjects(project, source){
     node.innerHTML = projectList[ProjectId][0];
     node.style.textShadow = '2px 2px 1px #DDDDDD';
     node.style.textAlign = "center";
-    node.style.gridColumn = "2 / span 2";
+    node.style.fontSize = "200%";
+    node.style.gridColumn = "2 / span 3";
     node.className = node.className + " left";
     container.appendChild(node);
 
@@ -171,7 +134,7 @@ function displayProjects(project, source){
     node.height = "360";
     node.borderRadius = "50%";
     node.style.gridColumnStart = "4";
-    node.style.gridRow = "1 / span 3";
+    node.style.gridRow = "2 / span 3";
     node.style.boxShadow = '5px 5px 13px #AAAAAA';
     container.appendChild(node);
   } else {
@@ -179,6 +142,53 @@ function displayProjects(project, source){
   };
 }
 
+function createContainer(columnDetail){
+  var node = document.createElement("section");
+  node.id = "container";
+  node.class = "container";
+  node.style.gridTemplateColumns = columnDetail;
+  node.style.display = "grid";
+  node.style.gridColumnGap = "1vw";
+  node.style.marginTop = "10vh";
+  mainArea.appendChild(node);
+}
+function scrollButton(project, source, name, classid, column) {
+  var node = document.createElement("section");
+  node.id = name;
+  node.style.textShadow = '2px 2px 1px #DDDDDD';
+  node.style.textAlign = "center";
+  node.style.gridColumn = column;
+  node.style.gridRow = "1";
+  container.appendChild(node);
+
+  var iconLocation = document.getElementById(name);
+
+  var node = document.createElement("i");
+  node.id = name + "__icon";
+  node.className = "scroll";
+  node.style.textShadow = '2px 2px 1px #DDDDDD';
+  node.className=classid;
+  node.style.fontSize = "400%";
+  node.style.filter = "invert(80%)";
+  node.style.borderRadius = "50%";
+  node.style.boxShadow = '5px 5px 13px #AAAAAA';
+  node.setAttribute("onclick", name + "Project('" + project + "', '" + source + "')");
+  node.setAttribute("onmouseover", "highlightButton('" + node.id + "')");
+  node.setAttribute("onmouseout", "resetButton('" + node.id + "')");
+
+  iconLocation.appendChild(node);
+}
+
+function highlightButton(node){
+  var button = document.getElementById(node);
+  button.style.cursor = "pointer";
+  button.style.filter = "invert(0%)";
+}
+
+function resetButton(node){
+  var button = document.getElementById(node);
+  button.style.filter = "invert(80%)";
+}
 function previousProject(project, source){
   if (ProjectId === 0) {
     ProjectId = window[project].length;
