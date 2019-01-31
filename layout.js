@@ -101,7 +101,7 @@ function displayProjects(project, source){
   if (projectList.length > 1){
     node.id = "container";
     node.class = "container";
-    node.style.gridTemplateColumns = '"40vw" "20vw" "40vw"';
+    node.style.gridTemplateColumns = '20% 10% 10% 40% 20%';
     node.style.display = "grid";
     node.style.gridColumnGap = "1vw";
     node.style.marginTop = "10vh";
@@ -109,48 +109,94 @@ function displayProjects(project, source){
 
     var container = document.getElementById("container");
 
-    for (let i=0; i<projectList.length; i++){
+    var node = document.createElement("section");
+    node.id = "previous";
+    node.className = "scroll";
+    node.innerHTML = "<--";
+    node.style.textShadow = '2px 2px 1px #DDDDDD';
+    node.style.textAlign = "right";
+    node.style.gridColumn = "1";
+    node.style.gridRow = "2"
+    node.setAttribute("onclick", "previousProject('" + project + "', '" + source + "')");
+    container.appendChild(node);
+
+    var node = document.createElement("section");
+    node.id = "next";
+    node.className = "scroll";
+    node.innerHTML = "-->";
+    node.style.textShadow = '2px 2px 1px #DDDDDD';
+    node.style.textAlign = "left";
+    node.style.gridColumn = "5";
+    node.style.gridRow = "2"
+    node.className = node.className + " left";
+    node.setAttribute("onclick", "nextProject('" + project + "', '" + source + "')");
+    container.appendChild(node);
+
+    var node = document.createElement("section");
+    node.id = projectList[ProjectId][1] + "__text";
+    node.className = "project";
+    node.innerHTML = projectList[ProjectId][0];
+    node.style.textShadow = '2px 2px 1px #DDDDDD';
+    node.style.textAlign = "center";
+    node.style.gridColumn = "2 / span 2";
+    node.className = node.className + " left";
+    container.appendChild(node);
+
+    var row = 2;
+    for (let i=0; i<projectList[ProjectId][4].length; i++) {
       var node = document.createElement("section");
-      node.id = projectList[i][1] + "__text";
-      node.className = "project";
-      node.innerHTML = projectList[i][0];
-      node.style.textShadow = '2px 2px 1px #DDDDDD';
-      if ((i + 1) % 2 === 0) {
-        node.className = node.className + " right";
+      node.id = projectList[ProjectId][4][i];
+      node.style.gridRowStart = Math.floor(row);
+      node.style.textAlign = "center";
+      row += 0.5;
+      if (i % 2 === 0) {
+        node.style.gridColumnStart = "2";
+      } else {
         node.style.gridColumnStart = "3";
-        node.style.textAlign = "left";
-      } else {;
-        node.style.gridColumnStart = "1";
-        node.style.textAlign = "right";
-        node.className = node.className + " left";
       }
-      node.style.gridRowStart = i + 1;
       container.appendChild(node);
 
-      var node = document.createElement("img");
-      node.id = projectList[i][1] + "__image";
-      node.className = "projectImage";
-      node.src = projectList[i][3];
-      node.width = "200";
-      node.height = "200";
-      node.borderRadius = "50%";
-      if ((i + 1) % 2 === 0) {
-        node.className = node.className + " left";
-        node.style.gridColumnStart = "1";
-        node.style.textAlign = "left";
-      } else {;
-        node.style.gridColumnStart = "3";
-        node.style.textAlign = "right";
-        node.className = node.className + " right";
-      }
-      node.style.boxShadow = '5px 5px 13px #AAAAAA';
-      node.style.gridRowStart = i + 1;
-      container.appendChild(node);
-
+      var icon = document.getElementById(projectList[ProjectId][4][i]);
+      var tech = document.createElement("img");
+      tech.src = projectList[ProjectId][4][i] + ".svg";
+      tech.className = "icon";
+      icon.appendChild(tech);
     }
+
+    var node = document.createElement("img");
+    node.id = projectList[ProjectId][1] + "__image";
+    node.className = "projectImage";
+    node.src = projectList[ProjectId][3];
+    node.width = "500";
+    node.height = "360";
+    node.borderRadius = "50%";
+    node.style.gridColumnStart = "4";
+    node.style.gridRow = "1 / span 3";
+    node.style.boxShadow = '5px 5px 13px #AAAAAA';
+    container.appendChild(node);
   } else {
     alert("just 1 - needs coding");
   };
+}
+
+function previousProject(project, source){
+  if (ProjectId === 0) {
+    ProjectId = window[project].length;
+  } else {
+    ProjectId--;
+  }
+
+  displayProjects(project, source);
+}
+
+function nextProject(project, source){
+  if (ProjectId === window[project].length) {
+    ProjectId = 0;
+  } else {
+    ProjectId++;
+  }
+
+  displayProjects(project, source);
 }
 
 function fade() {

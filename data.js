@@ -1,12 +1,11 @@
 const author = "Robert Worth";
 const intro = "Frontend Developer / Project Manager / Music Lover";
+var ProjectId = 0;
 
 var navigation = [
                   ["<i class='fas fa-home'></i> HOME", "HOME", "nav1", "#000000"],
                   ["Biography", "ABOUT", "nav1", "#DDAA66"],
                   ["Personal Projects", "PERSONAL", "nav1", "#DDAA66"],
-                  //["freeCodeCamp Responsive Web Desgn", "FCCRWD", "nav1"],
-                  //["freeCodeCamp Front End Libraries", "FCCFEL", "nav1"],
                   ["Online Coursework","COURSES", "nav1", "#DDAA66"],
                   ["Certificates", "CERTS", "nav1", "#DDAA66"]
                 ];
@@ -31,11 +30,11 @@ var fccRWDNav = [
                 ];
 
 var fccFELNav = [
-                  ["Random Quote Generator", "RQG", "https://robwuk.github.io/FCC_RQG/", "Tribute.PNG", ["HTML", "CSS", "JavaScript", "Bootstrap"], "freeCodeCamp Random Quote Generator", "nav2"],
-                  ["Calculator", "CALC", "https://robwuk.github.io/FCC_Calc/", "TechDoc.PNG", ["HTML", "CSS", "JavaScript", "Bootstrap"], "freeCodeCamp Javascript Calculator", "nav2"],
-                  ["Drumkit", "DRUMKIT", "https://robwuk.github.io/fcc_drum/", "Survey.PNG", ["HTML", "CSS", "JavaScript", "Bootstrap"], "freeCodeCamp Javascriupt Drumkit", "nav2"],
-                  ["Pomodoro Clock", "CLOCK", "https://robwuk.github.io/pomodoro/", "RW_Profile.PNG", ["HTML", "CSS", "JavaScript", "Bootstrap"], "freeCodeCamp Pomodoro Clcok", "nav2"],
-                  ["GitHub Markdown Previewer", "MARKDOWN", "https://robwuk.github.io/Git_Parse/", "Product.PNG", ["HTML", "CSS"], "freeCodeCamp GitHub Markdown Previewer", "nav2"]
+                  ["Random Quote Generator", "RQG", "https://robwuk.github.io/FCC_RQG/", "FCC_RQG.JPG", ["HTML", "CSS", "JavaScript", "Bootstrap"], "freeCodeCamp Random Quote Generator", "nav2"],
+                  ["Calculator", "CALC", "https://robwuk.github.io/FCC_Calc/", "FCC_Calculator.JPG", ["HTML", "CSS", "JavaScript", "Bootstrap"], "freeCodeCamp Javascript Calculator", "nav2"],
+                  ["Drumkit", "DRUMKIT", "https://robwuk.github.io/fcc_drum/", "FCC_Drumkit.JPG", ["HTML", "CSS", "JavaScript", "Bootstrap"], "freeCodeCamp Javascriupt Drumkit", "nav2"],
+                  ["Pomodoro Clock", "CLOCK", "https://robwuk.github.io/pomodoro/", "FCC_Pomodoro.JPG", ["HTML", "CSS", "JavaScript", "Bootstrap"], "freeCodeCamp Pomodoro Clcok", "nav2"],
+                  ["GitHub Markdown Previewer", "MARKDOWN", "https://robwuk.github.io/Git_Parse/", "FCC_Previewer.JPG", ["HTML", "CSS"], "freeCodeCamp GitHub Markdown Previewer", "nav2"]
                 ];
 
 var sandBoxProject = [
@@ -62,11 +61,11 @@ var quotes = [
 ]
 
 var techIcons = [
-                  ["html5.svg", "HTML5", "high"],
-                  ["css3_full.svg", "CSS3", "high"],
-                  ["js_badge.svg", "Javascript", "medium"],
-                  ["bootstrap.svg", "Bootstrap", "medium"],
-                  ["angular_simple.svg", "Angular", "low"],
+                  ["HTML.svg", "HTML5", "high"],
+                  ["CSS.svg", "CSS3", "high"],
+                  ["JavaScript.svg", "Javascript", "medium"],
+                  ["Bootstrap.svg", "Bootstrap", "medium"],
+                  ["Angular.svg", "Angular", "low"],
                   ["github_badge.svg", "GitHub", "low"]
                 ]
 
