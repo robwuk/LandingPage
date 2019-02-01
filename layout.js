@@ -99,12 +99,16 @@ function displayProjects(project, source){
     var node = document.createElement("section");
     node.id = projectList[ProjectId][1] + "__text";
     node.className = "project";
-    node.innerHTML = projectList[ProjectId][0];
+    node.innerHTML = projectList[ProjectId][0]/* + "<br />"*/;
     node.style.textShadow = '2px 2px 1px #DDDDDD';
     node.style.textAlign = "center";
     node.style.fontSize = "200%";
     node.style.gridColumn = "2 / span 3";
-    node.className = node.className + " left";
+
+    if (projectList[ProjectId][7] === "G") {
+      node.innerHTML += " <a href='" + githubRepo + projectList[ProjectId][2] + "' target='_blank' style='font-size: 50%; line-height: 12px'>Code</a> ";
+      node.innerHTML += " <a href='" + githubPage + projectList[ProjectId][2] + "' target='_blank' style='font-size: 50%; line-height: 12px'>Site</a>";
+    }
     container.appendChild(node);
 
     var row = 2;

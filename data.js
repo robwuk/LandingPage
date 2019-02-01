@@ -1,5 +1,8 @@
 const author = "Robert Worth";
 const intro = "Frontend Developer / Project Manager / Music Lover";
+const githubRepo = "https://github.com/robwuk/";
+const githubPage = "https://robwuk.github.io/";
+
 var ProjectId = 0;
 
 var navigation = [
@@ -17,37 +20,37 @@ var courseNav = [
                 ];
 
 var personalNav = [
-                  ["Monkton Park Church", "MPC", "https://robwuk.github.io/MPC_Boot/", "MPC_Old_Photo.jpg", ["JavaScript", "HTML", "Bootstrap", "CSS"], "Development website for Monkton Park Methodist Church", "nav2"],
-                  ["Sandbox", "SANDBOX", "https://robwuk.github.io/MPC_Boot/", "WIP.jpg", ["JavaScript", "HTML", "Bootstrap", "CSS"], "Development website I use for trying new techniques", "nav2"]
+                  ["Monkton Park Church", "MPC", "", "", "", "", "nav2","G"],
+                  ["Sandbox", "SANDBOX", "", "", "", "", "nav2","G"]
                 ];
 
 var fccRWDNav = [
-                  ["Tribute Page", "TRIBUTE", "https://robwuk.github.io/TributePage/", "Tribute.PNG", ["HTML", "CSS"], "freeCodeCamp Tribute Page", "nav2"],
-                  ["Technical Documentation", "TECHDOC", "https://robwuk.github.io/TechDoc/", "TechDoc.PNG", ["HTML", "CSS"], "freeCodeCamp Technical Documentation Page", "nav2"],
-                  ["Survey Form", "SURVEY", "https://robwuk.github.io/SurveyForm/", "Survey.PNG", ["HTML", "CSS"], "freeCodeCamp Survey Form Page", "nav2"],
-                  ["Personal Profile", "PROFILE", "https://robwuk.github.io/Profile/", "FCC_Profile_Small.jpg", ["HTML", "CSS"], "freeCodeCamp Personal Profile Page", "nav2"],
-                  ["Product Overview", "PRODUCT", "https://robwuk.github.io/ProductPage/", "Product.PNG", ["HTML", "CSS"], "freeCodeCamp Product Overview Page", "nav2"]
+                  ["Tribute Page", "TRIBUTE", "TributePage", "Tribute.PNG", ["HTML", "CSS"], "freeCodeCamp Tribute Page", "nav2", "G"],
+                  ["Technical Documentation", "TECHDOC", "TechDoc", "TechDoc.PNG", ["HTML", "CSS"], "freeCodeCamp Technical Documentation Page", "nav2", "G"],
+                  ["Survey Form", "SURVEY", "SurveyForm", "Survey.PNG", ["HTML", "CSS"], "freeCodeCamp Survey Form Page", "nav2", "G"],
+                  ["Personal Profile", "PROFILE", "Profile", "FCC_Profile_Small.jpg", ["HTML", "CSS"], "freeCodeCamp Personal Profile Page", "nav2", "G"],
+                  ["Product Overview", "PRODUCT", "ProductPage", "Product.PNG", ["HTML", "CSS"], "freeCodeCamp Product Overview Page", "nav2", "G"]
                 ];
 
 var fccFELNav = [
-                  ["Random Quote Generator", "RQG", "https://robwuk.github.io/FCC_RQG/", "FCC_RQG.JPG", ["HTML", "CSS", "JavaScript", "Bootstrap"], "freeCodeCamp Random Quote Generator", "nav2"],
-                  ["Calculator", "CALC", "https://robwuk.github.io/FCC_Calc/", "FCC_Calculator.JPG", ["HTML", "CSS", "JavaScript", "Bootstrap"], "freeCodeCamp Javascript Calculator", "nav2"],
-                  ["Drumkit", "DRUMKIT", "https://robwuk.github.io/fcc_drum/", "FCC_Drumkit.JPG", ["HTML", "CSS", "JavaScript", "Bootstrap"], "freeCodeCamp Javascriupt Drumkit", "nav2"],
-                  ["Pomodoro Clock", "CLOCK", "https://robwuk.github.io/pomodoro/", "FCC_Pomodoro.JPG", ["HTML", "CSS", "JavaScript", "Bootstrap"], "freeCodeCamp Pomodoro Clcok", "nav2"],
-                  ["GitHub Markdown Previewer", "MARKDOWN", "https://robwuk.github.io/Git_Parse/", "FCC_Previewer.JPG", ["HTML", "CSS"], "freeCodeCamp GitHub Markdown Previewer", "nav2"]
+                  ["Random Quote Generator", "RQG", "FCC_RQG", "FCC_RQG.JPG", ["HTML", "CSS", "JavaScript", "Bootstrap"], "freeCodeCamp Random Quote Generator", "nav2", "G"],
+                  ["Calculator", "CALC", "FCC_Calc", "FCC_Calculator.JPG", ["HTML", "CSS", "JavaScript", "Bootstrap"], "freeCodeCamp Javascript Calculator", "nav2", "G"],
+                  ["Drumkit", "DRUMKIT", "fcc_drum", "FCC_Drumkit.JPG", ["HTML", "CSS", "JavaScript", "Bootstrap"], "freeCodeCamp Javascriupt Drumkit", "nav2", "G"],
+                  ["Pomodoro Clock", "CLOCK", "pomodoro", "FCC_Pomodoro.JPG", ["HTML", "CSS", "JavaScript", "Bootstrap"], "freeCodeCamp Pomodoro Clcok", "nav2", "G"],
+                  ["GitHub Markdown Previewer", "MARKDOWN", "Git_Parse", "FCC_Previewer.JPG", ["HTML", "CSS"], "freeCodeCamp GitHub Markdown Previewer", "nav2", "G"]
                 ];
 
 var sandBoxProject = [
-                  ["Sandbox", "SANDBOX", "https://robwuk.github.io/FCC_RQG/", "webdevelopment.jpg", ["HTML", "CSS", "JavaScript"], "Sandbox", "nav2"]
+                  ["Sandbox", "SANDBOX", "Sandbox", "webdevelopment.jpg", ["HTML", "CSS", "JavaScript"], "Sandbox", "nav2", "G"]
                 ];
 
 
 var FEMNav = [
-                  ["Challenge 1", "FEM1", "https://robwuk.github.io/FCC_RQG/", "WIP.jpg", ["HTML", "CSS", "JavaScript"], "Front End Montor Challenge 1", "nav2"]
+                  ["Challenge 1", "FEM1", "huddle-lp", "FM_Huddle_Page_small.jpg", ["HTML", "CSS", "JavaScript"], "Front End Montor Challenge 1", "nav2", "G"]
                 ];
 
 var MPCProject = [
-                  ["Monkton Park Church", "FEM1", "https://robwuk.github.io/FCC_RQG/", "MPC_Old_Photo.jpg", ["HTML", "CSS", "JavaScript"], "Monkton Park Church", "nav2"]
+                  ["Monkton Park Church", "MPC", "MPC_Boot", "MPC_Old_Photo.jpg", ["HTML", "CSS", "JavaScript"], "Monkton Park Church", "nav2", "G"]
                 ];
 
 var quotes = [
@@ -74,21 +77,22 @@ var FCCRWD = [['<courseTitle>freeCodeCamp Responsive Web Design Projects</course
               'As part of the <a href="https://learn.freecodecamp.org" target="_blank">freeCodeCamp</a>',
               ' <i>Responsive Web Design</i> certificate there are 5 projects that need to be completed, ',
               'tested and submitted, These projects cover all of the elements the course goes over and are ',
-              'used to confirm learning. Click the corresponding link to see the finished project'].join(""),
+              'used to confirm learning.'].join(""),
               "fccRWDNav", "courseNav", "FCCRWD"]
 
 var FCCFEL = [['<courseTitle>freeCodeCamp Front End Library Projects</courseTitle><br /><br />',
               'As part of the <a href="https://learn.freecodecamp.org" target="_blank">freeCodeCamp</a>',
-              ' <i>Responsive Web Design</i> certificate there are 5 projects that need to be completed, ',
+              ' <i>Frontend Libraries</i> certificate there are 5 projects that need to be completed, ',
               'tested and submitted, These projects cover all of the elements the course goes over and are ',
-              'used to confirm learning. Click the corresponding link to see the finished project'].join(""),
+              'used to confirm learning.'].join(""),
               "fccFELNav", "courseNav", "FCCFEL"]
 
 var FEM = [['<courseTitle>Front End Mentor Projects</courseTitle><br /><br />',
-              'As part of the <a href="https://learn.freecodecamp.org" target="_blank">freeCodeCamp</a>',
-              ' <i>Responsive Web Design</i> certificate there are 5 projects that need to be completed, ',
-              'tested and submitted, These projects cover all of the elements the course goes over and are ',
-              'used to confirm learning. Click the corresponding link to see the finished project'].join(""),
+             '<a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a> provides a number of ',
+              '<em>challenges</em> to help cement HTML/CSS/JavaScript skills. For each challenge you are provided ',
+              'with a design specification (fonts to use, colour schemes etc.), any site-specific images and an ',
+              'image of the layout you need to achieve. You then develop the HTML/CSS/Javascript to deliver the ',
+              'brief.'].join(""),
               "FEMNav", "courseNav", "FEM"]
 
 var MPC = [['<courseTitle>Monkton Park Church</courseTitle><br /><br />',
