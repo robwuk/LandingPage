@@ -105,13 +105,13 @@ var MPC = [['<courseTitle>Monkton Park Church</courseTitle><br /><br />',
               'Development website for Monkton Park Methodist Church. Built using HTML5, CSS3 and ',
               'Javascript it gives people an insight in to the church, regular events and any special ',
               'occassions in the near future.'].join(""),
-              "MPCProject", "personalNav", "MPC"]
+              "MPCProject", "personalNav", "MPC",""]
 
 var SANDBOX = [['<courseTitle>Sandbox</courseTitle><br /><br />',
               'Test bed site in which I will look to use different techniques as/when I come across them. ',
               'The contents may vary and look a bit disjointed and have errors but that is all part of ',
               'my style of learning.'].join(""),
-              "sandBoxProject", "personalNav", "SANDBOX"]
+              "sandBoxProject", "personalNav", "SANDBOX",""]
 
 var CERTS = [['<issuer>FreeCodeCamp</issuer>','<a href="https://www.freecodecamp.org/" target="_blank">Website</a>',
             [["Responsive Web Design","Cert_RWD.JPG","RWD"],["JavaScript","Cert_JS.JPG","JS"],["Frontend Libraries","Cert_FEL.JPG","FEL"]]],
