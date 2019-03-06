@@ -37,12 +37,12 @@
   height: 100%;
 }
 
-.nav1:hover, .nav2:hover, .moreinfo{
+.nav1:hover, .nav2:hover, .moreinfo, .certificate{
   cursor: pointer;
 }
 
 #mainarea{
-  height: 84vh;
+/*  height: 84vh; */
   margin-top: 8vh;
 }
 
@@ -212,7 +212,14 @@ a:hover{
   }
 }
 
-.moreinfo {
+.certificateImage {
+  width:50vw;
+  height:54vh;
+  margin-left: 24vw;
+  margin-top: 14vh;
+}
+
+.moreinfo, .certificate {
   color: red;
 }
 

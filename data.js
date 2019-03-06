@@ -9,13 +9,13 @@ var navigation = [
                   ["<i class='fas fa-home'></i> HOME", "HOME", "nav1", "#000000"],
                   ["Biography", "ABOUT", "nav1", "#DDAA66"],
                   ["Personal Projects", "PERSONAL", "nav1", "#DDAA66"],
-                  ["Online Coursework","COURSES", "nav1", "#DDAA66"],
-                  ["Certificates", "CERTS", "nav1", "#DDAA66"]
+                  ["Online Coursework","COURSES", "nav1", "#DDAA66"]
                 ];
 
 var courseNav = [
                   ["freeCodeCamp Responsive Web Desgn", "FCCRWD", "", "", "", "", "nav2"],
                   ["freeCodeCamp Front End Libraries", "FCCFEL", "", "", "", "", "nav2"],
+                  ["freeCodeCamp Javascript Algorithms And Data Structures", "FCCJS", "", "", "", "", "nav2"],
                   ["Frontend Mentor", "FEM", "", "", "","", "nav2"]
                 ];
 
@@ -44,7 +44,6 @@ var sandBoxProject = [
                   ["Sandbox", "SANDBOX", "Sandbox", "webdevelopment.jpg", ["HTML", "CSS", "JavaScript"], "Sandbox", "nav2", "G"]
                 ];
 
-
 var FEMNav = [
                   ["Challenge 1", "FEM1", "huddle-lp", "FM_Huddle_Page_small.jpg", ["HTML", "CSS", "JavaScript"], "Front End Montor Challenge 1", "nav2", "G"]
                 ];
@@ -72,20 +71,27 @@ var techIcons = [
                   ["github_badge.svg", "GitHub", "low"]
                 ]
 
+var FCCJS = [['<courseTitle>freeCodeCamp Javascript Algorithms And Data Structures</courseTitle><br /><br />',
+              'As part of the <a href="https://learn.freecodecamp.org" target="_blank">freeCodeCamp</a>',
+              ' <i>Javascript Algorithms And Data Structures</i> certificate there are 5 projects that need to be completed, ',
+              'tested and submitted, These projects cover all of the elements the course goes over and are ',
+              'used to confirm learning. These exercises do not result in an external website'].join(""),
+              "", "", "FCCFEL","Cert_JS.JPG"]
+
 
 var FCCRWD = [['<courseTitle>freeCodeCamp Responsive Web Design Projects</courseTitle><br /><br />',
               'As part of the <a href="https://learn.freecodecamp.org" target="_blank">freeCodeCamp</a>',
               ' <i>Responsive Web Design</i> certificate there are 5 projects that need to be completed, ',
               'tested and submitted, These projects cover all of the elements the course goes over and are ',
               'used to confirm learning.'].join(""),
-              "fccRWDNav", "courseNav", "FCCRWD"]
+              "fccRWDNav", "courseNav", "FCCRWD","Cert_RWD.JPG"]
 
 var FCCFEL = [['<courseTitle>freeCodeCamp Front End Library Projects</courseTitle><br /><br />',
               'As part of the <a href="https://learn.freecodecamp.org" target="_blank">freeCodeCamp</a>',
               ' <i>Frontend Libraries</i> certificate there are 5 projects that need to be completed, ',
               'tested and submitted, These projects cover all of the elements the course goes over and are ',
               'used to confirm learning.'].join(""),
-              "fccFELNav", "courseNav", "FCCFEL"]
+              "fccFELNav", "courseNav", "FCCFEL","Cert_FEL.JPG"]
 
 var FEM = [['<courseTitle>Front End Mentor Projects</courseTitle><br /><br />',
              '<a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a> provides a number of ',
@@ -93,7 +99,7 @@ var FEM = [['<courseTitle>Front End Mentor Projects</courseTitle><br /><br />',
               'with a design specification (fonts to use, colour schemes etc.), any site-specific images and an ',
               'image of the layout you need to achieve. You then develop the HTML/CSS/Javascript to deliver the ',
               'brief.'].join(""),
-              "FEMNav", "courseNav", "FEM"]
+              "FEMNav", "courseNav", "FEM",""]
 
 var MPC = [['<courseTitle>Monkton Park Church</courseTitle><br /><br />',
               'Development website for Monkton Park Methodist Church. Built using HTML5, CSS3 and ',
@@ -106,3 +112,8 @@ var SANDBOX = [['<courseTitle>Sandbox</courseTitle><br /><br />',
               'The contents may vary and look a bit disjointed and have errors but that is all part of ',
               'my style of learning.'].join(""),
               "sandBoxProject", "personalNav", "SANDBOX"]
+
+var CERTS = [['<issuer>FreeCodeCamp</issuer>','<a href="https://www.freecodecamp.org/" target="_blank">Website</a>',
+            [["Responsive Web Design","Cert_RWD.JPG","RWD"],["JavaScript","Cert_JS.JPG","JS"],["Frontend Libraries","Cert_FEL.JPG","FEL"]]],
+            ['<issuer>SoloLearn</issuer>','<a href="https://www.freecodecamp.org/" target="_blank">Solo Website</a>',
+            [["Solo Responsive Web Design","Cert_RWD.JPG"],["Solo JavaScript","Cert_JS.JPG"],["Solo Frontend Libraries","Cert_FEL.JPG"]]]]

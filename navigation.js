@@ -20,9 +20,6 @@ function nav1OnClick(caller) {
       //createNav2(courseNav);
       coursePage(courseNav);
       break;
-  //  case "FCCFEL":
-  //    createNav2(fccFELNav);
-  //    break;
   };
 }
 

@@ -46,7 +46,6 @@ function bioPage() {
     var source = document.getElementById("internalabout");
     node.id = "aboutme";
     node.innerHTML = source.innerHTML;
-//    node.data = 'about.html';
     mainArea.appendChild(node);
 }
 
@@ -61,8 +60,16 @@ function coursePage(pageArray) {
     node.id = pageArray[i][1] + "__text";
     node.className = "course";
     var variable = window[pageArray[i][1]];
-    node.innerHTML =  variable[0];
-    node.innerHTML += "<br /><section class='moreinfo' onclick='displayProjects(\"" + variable[3] + "\", \""+ variable[2] + "\")'>see detail...</section>";
+    node.innerHTML =  "<br />" + variable[0];
+
+    if (variable[4] != "") { //display certificate link if there is a certificate
+      node.innerHTML += "<section class='certificate' onclick='displayCertificate(\"" + variable[4] + "\")'>see certificate...</section>";
+    };
+
+    if (variable[1] != "") { //display detail link if there are further websites
+    node.innerHTML += "<section class='moreinfo' onclick='displayProjects(\"" + variable[3] + "\", \""+ variable[2] + "\")'>see detail...</section>";
+    }
+
     node.style.textShadow = '2px 2px 1px #DDDDDD';
     if ((i + 1) % 2 === 0) {
       node.className = node.className + " right";
@@ -73,7 +80,6 @@ function coursePage(pageArray) {
       node.style.textAlign = "right";
       node.className = node.className + " left";
     }
-    node.style.gridRowStart = i + 1;
     container.appendChild(node);
   }
 }
@@ -156,6 +162,7 @@ function createContainer(columnDetail){
   node.style.marginTop = "10vh";
   mainArea.appendChild(node);
 }
+
 function scrollButton(project, source, name, classid, column) {
   var node = document.createElement("section");
   node.id = name;
@@ -193,9 +200,10 @@ function resetButton(node){
   var button = document.getElementById(node);
   button.style.filter = "invert(80%)";
 }
+
 function previousProject(project, source){
   if (ProjectId === 0) {
-    ProjectId = window[project].length;
+    ProjectId = window[project].length-1;
   } else {
     ProjectId--;
   }
@@ -204,7 +212,7 @@ function previousProject(project, source){
 }
 
 function nextProject(project, source){
-  if (ProjectId === window[project].length) {
+  if (ProjectId === window[project].length-1) {
     ProjectId = 0;
   } else {
     ProjectId++;
@@ -213,30 +221,16 @@ function nextProject(project, source){
   displayProjects(project, source);
 }
 
-function fade() {
-    var op = 1;  // initial opacity
-    var timer = setInterval(function () {
-        if (op <= 0.1){
-            clearInterval(timer);
-            mainArea.style.display = 'none';
-        }
-        mainArea.style.opacity = op;
-      //  mainArea.style.opacity = parseFloat(mainArea.style.opacity) - 0.1;
-        op -= op * 0.1;
-    }, 50);
-}
+function displayCertificate(cert){
+  clearMain();
 
-function unfade() {
-    var op = 0.1;  // initial opacity
-    mainArea.style.display = 'block';
-    var timer = setInterval(function () {
-        if (op >= 1){
-            clearInterval(timer);
-        }
-        mainArea.style.opacity = op;
-    //    mainArea.style.opacity = parseFloat(mainArea.style.opacity) + 0.1;
-        op += op * 0.1;
-    }, 10);
+  var node = document.createElement("img");
+  node.id = cert + "__image";
+  node.className = "certificateImage";
+  node.src = cert;
+  node.borderRadius = "50%";
+  node.style.boxShadow = '5px 5px 13px #AAAAAA';
+  mainArea.appendChild(node);
 }
 
 function clearMain() {
